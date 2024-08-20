@@ -62,5 +62,3 @@ By minimizing this loss during training, the model learns to generate embeddings
 ## Conclusion
 
 This project showcases the application of deep learning techniques, particularly convolutional neural networks and Triplet Loss, in solving the face recognition problem. The combination of powerful models, effective training techniques, and careful tuning of hyperparameters results in a highly effective face recognition system.
-
--
