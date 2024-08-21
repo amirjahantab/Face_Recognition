@@ -1,5 +1,3 @@
-
-
 # Face Recognition
 
 ## Introduction
@@ -36,8 +34,6 @@ Several mathematical concepts underpin the operation of CNNs:
 
 - **Optimization and Backpropagation:** The model parameters are optimized using gradient descent, a method that minimizes the loss function by updating the weights in the direction of the negative gradient. Backpropagation is used to efficiently compute the gradients of the loss function with respect to each weight.
 
-- **Regularization:** Techniques such as dropout are used to prevent overfitting by randomly setting a fraction of the activations to zero during training, encouraging the network to learn more robust features.
-
 #### 4. **Triplet Loss**
 
 Triplet Loss is a specialized loss function used in face recognition tasks to learn a compact and discriminative embedding space where faces of the same person are closer together, and faces of different people are far apart.
@@ -50,9 +46,7 @@ Triplet Loss is a specialized loss function used in face recognition tasks to le
 
 The goal of Triplet Loss is to ensure that the distance between the anchor and the positive image is smaller than the distance between the anchor and the negative image by at least a margin $\ \alpha\ $. Mathematically, the loss is defined as:
 
-$\
-\text{Triplet Loss} = \max\{ \lVert f(A) - f(P) \rVert^2 - \lVert f(A) - f(N) \rVert^2 + \alpha, 0 \}
-\ $
+$\ \text{Triplet Loss} = max ( \lVert f(A) - f(P) \rVert^2 - \lVert f(A) - f(N) \rVert^2 + \alpha, 0 ) \ $
 
 
 By minimizing this loss during training, the model learns to generate embeddings where faces of the same person are closer together in the embedding space, and faces of different people are well separated, which is crucial for accurate face recognition.
